@@ -13,8 +13,11 @@ function sumFibs(num) {
     old=neew;
     neew=x;
   }
-   
-  arry.pop();
+  
+  if (arry[arry.length-1]>num){
+    arry.pop()
+  }
+  
     
    var res = arry.reduce(function(prev, curr) {
       if (curr%2 !== 0) return prev + curr;
@@ -25,4 +28,4 @@ function sumFibs(num) {
 }
   
   
-sumFibs(1000);
+sumFibs(75024);
